@@ -33,3 +33,5 @@ struct WebView: UIViewRepresentable {
         uiView.load(request)
     }
 }
+
+// TODO:: info plist 웹뷰 접근 도메인 관련해서 명확하게 작성해야 함. 참고 : https://inuplace.tistory.com/1222
