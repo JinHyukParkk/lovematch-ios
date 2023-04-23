@@ -14,6 +14,7 @@
 		5165196229D9C67E003F0BAA /* LoveMatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5165196129D9C67E003F0BAA /* LoveMatchTests.swift */; };
 		5165196C29D9C67E003F0BAA /* LoveMatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5165196B29D9C67E003F0BAA /* LoveMatchUITests.swift */; };
 		5165196E29D9C67E003F0BAA /* LoveMatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5165196D29D9C67E003F0BAA /* LoveMatchUITestsLaunchTests.swift */; };
+		51D1B7BA29F5578500832C4C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D1B7B929F5578500832C4C /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		5165196729D9C67E003F0BAA /* LoveMatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoveMatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5165196B29D9C67E003F0BAA /* LoveMatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveMatchUITests.swift; sourceTree = "<group>"; };
 		5165196D29D9C67E003F0BAA /* LoveMatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveMatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		51D1B7B929F5578500832C4C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		51D1B7C129F56BC500832C4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51D1B7BA29F5578500832C4C /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +83,7 @@
 				5165196029D9C67E003F0BAA /* LoveMatchTests */,
 				5165196A29D9C67E003F0BAA /* LoveMatchUITests */,
 				5165194D29D9C67C003F0BAA /* Products */,
+				51D1B7B829F5578500832C4C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +100,7 @@
 		5165194E29D9C67C003F0BAA /* LoveMatch */ = {
 			isa = PBXGroup;
 			children = (
+				51D1B7C129F56BC500832C4C /* Info.plist */,
 				5165194F29D9C67C003F0BAA /* LoveMatchApp.swift */,
 				5165195129D9C67C003F0BAA /* ContentView.swift */,
 				5165195329D9C67E003F0BAA /* Assets.xcassets */,
@@ -127,6 +133,14 @@
 				5165196D29D9C67E003F0BAA /* LoveMatchUITestsLaunchTests.swift */,
 			);
 			path = LoveMatchUITests;
+			sourceTree = "<group>";
+		};
+		51D1B7B829F5578500832C4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51D1B7B929F5578500832C4C /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,6 +433,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LoveMatch/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -457,6 +472,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LoveMatch/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
